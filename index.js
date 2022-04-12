@@ -1,6 +1,27 @@
 // Write your solution in this file!
-const customerName = 'bob'
+var customerName = 'bob'
 
-// function customerName(name = 'bob') {
-//   return name;
-// }
+function upperCaseCustomerName() {
+  customerName = customerName.toUpperCase();
+  return customerName;
+
+}
+
+function setBestCustomer() {
+  bestCustomer = 'not bob'
+  return bestCustomer;
+}
+
+function overwriteBestCustomer() {
+  bestCustomer = 'maybe bob';
+  return bestCustomer;
+}
+
+const leastFavoriteCustomer = 'maybe you'
+
+function changeLeastFavoriteCustomer() {
+  leastFavoriteCustomer = 'Assignment to constant variable.';
+  return leastFavoriteCustomer;
+}
+
+console.log(changeLeastFavoriteCustomer());
